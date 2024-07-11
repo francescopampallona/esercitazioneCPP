@@ -1,0 +1,10 @@
+ciao
+mondo
+marte
+terra
+venere
+mercurio
+saturno
+giove
+nettuno
+urano
