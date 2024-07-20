@@ -14,6 +14,8 @@ public:
 
     Pianeta(string nome, double massa, int diametro);
 
+    Pianeta(const Pianeta& pianeta);
+
     string getNome() const;
 
     void setNome(std::string nuovoNome);

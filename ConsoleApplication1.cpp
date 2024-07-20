@@ -7,11 +7,11 @@
 #include "Pianeta.h"
 using namespace std;
 
-void menu(bool* execution) {
+void menu(bool& execution) {
 	char choice;
 	cout << "Inserire q per uscire o qualsiasi altro tasto per rieseguire il programma!" << endl;
 	cin >> choice;
-	choice == 'q' ? (*execution) = false : (*execution) = true;
+	choice == 'q' ? (execution) = false : (execution) = true;
 
 }
 
@@ -47,9 +47,10 @@ int main()
 		for (Pianeta pianeta : pianeti) {
 			cout << pianeta.toString() << endl;
 		}
+
 		
 
-		menu(&execution);
+		menu(execution);
 	}
 }
 

@@ -7,6 +7,13 @@ Pianeta::Pianeta() : nome(""), massa(0.0), diametro(0) {}
 Pianeta::Pianeta(std::string nome, double massa, int diametro)
     : nome(nome), massa(massa), diametro(diametro) {}
 
+Pianeta::Pianeta(const Pianeta& pianeta) {
+    nome = pianeta.nome;
+    massa = pianeta.massa;
+    diametro = pianeta.diametro;
+
+}
+
 std::string Pianeta::getNome() const {
     return nome;
 }
